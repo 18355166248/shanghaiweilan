@@ -1,0 +1,965 @@
+/*--------顶部 轮播图 s ----------------------*/
+.bigPhoto {
+    width: 100%;
+    height: 790px;
+    overflow: hidden;
+    position: relative;
+}
+.bigPhoto ul {
+    width: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.bigPhoto .photo li {
+    height:790px;
+    width: 100%;
+
+}
+.bigPhoto .photo li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.bigPhoto .circleH {
+    position:absolute;
+    height:21px;
+    top:750px;
+    width: 100%;
+    text-align:center;
+    z-index:5;
+}
+.bigPhoto .circleH li {
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background : url(../images/ulink.png);
+    cursor: pointer;
+}
+.bigPhoto .circleH .currentHover {
+    background-position:  -21px 0;
+}
+
+
+
+
+
+/*--------------圆图区域 S------------------*/
+.circlex {
+    margin-top:50px;
+    position: relative;
+}
+.circlex i.arrowrx {
+    width: 49px;
+    height:97px;
+    background: url("../images/sc8_3.png") -51px 0;
+    position: absolute;
+    top:53px;
+    right:0;
+    cursor:pointer;
+}
+.circlex i.arrowrx:hover{
+    background-position: -51px -103px;
+}
+.circlex i.arrowlx {
+    width: 49px;
+    height:97px;
+    background-Image: url("../images/sc8_3.png");
+    background-position:0 0;
+    position: absolute;
+    top:53px;
+    left:0;
+    cursor:pointer;
+}
+.circlex i.arrowlx:hover{
+    background-position: 0 -103px;
+}
+.circlex .contentx {
+    width: 1016px;
+    margin:0 auto;
+    overflow: hidden;
+    position: relative;
+    height:390px;
+}
+.circlex .contentx ul {
+    width: 1620px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.circlex .contentx ul li {
+    float: left;
+    margin-right:68px;
+    width: 202px;
+}
+.circlex .contentx ul li .top1x{
+    height: 202px;
+    background: url(../images/sc8.png) 0 0;
+}
+.circlex .contentx ul li .bottomx {
+    text-align: center;
+    padding-top:25px;
+}
+.circlex .contentx ul li .bottomx h3 {
+    font:400 19px/31px "微软雅黑";
+}
+.circlex .contentx ul li .bottomx i {
+    font:29px/41px "微软雅黑";
+    color:#0077c2;
+}
+.circlex .contentx ul li .bottomx p {
+    line-height: 24px;
+}
+.circlex .contentx ul li .top2x{
+    height: 202px;
+    background: url(../images/sc8.png) -322px 0;
+}
+.circlex .contentx ul li .top3x{
+    height: 202px;
+    background: url(../images/sc8.png) -645px 0;
+}
+.circlex .contentx ul li .top4x{
+    height: 202px;
+    background: url(../images/sc8.png) -968px 0;
+}
+.circlex .contentx ul li .top5x{
+    height: 202px;
+    background: url(../images/sc8.png) -1289px 0;
+}
+.circlex .contentx li a:hover .bottomx {
+    color:#666;
+}
+.circlex .contentx li a:hover .bottomx i {
+    color:#a40182;
+}
+
+/*--------------圆图区域 e ------------------*/
+
+/*--------------最新活动 s --------------------*/
+/*共用标题栏*/
+.hd04 {
+    background: url(../images/i8.png) no-repeat center top;
+    height: 230px;
+    margin: 100px 0 40px;
+    text-align: center;
+}
+
+.hd04 i {
+    border-bottom: 1px solid #bfc5c8;
+    position: relative;
+    top: 157px;
+    display: block;
+}
+
+.hd04 a {
+    width: 818px;
+    padding-top: 143px;
+    height: 85px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: block
+}
+
+.hd04 span {
+    font-size: 20px;
+    margin: 0 auto 30px;
+    background: #f3f3f3 url(../images/bg.jpg);
+    padding: 0 10px 1px;
+    position: relative
+}
+
+.hd04 a:hover span {
+    background: #00abeb;
+    color: #fff;
+    border-radius: 5px
+}
+
+.hd04 h2 {
+    margin-top: 70px
+}
+.news {
+    overflow: hidden;
+    position: relative;
+    /*height: 610px;*/
+}
+.news ul.bd {
+    height: 500px;
+    overflow: hidden;
+    width: 4000px;
+    position:absolute;
+}
+.news .bd li{
+    float: left;
+}
+.news .bd img {
+    width: 1180px;
+    height: 500px;
+    display: block;
+}
+
+.news .hd {
+    width: 1182px;
+    margin-top:500px;
+}
+
+.news .hd li {
+    width: 393px;
+    padding: 10px 0;
+    border-right: 1px solid #ccc;
+    float: left;
+    text-align: center;
+    margin-top: 30px
+}
+
+.news .hd a h3 {
+    font-size: 18px;
+    color: #333;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+    font-weight: normal;
+    cursor: pointer
+}
+
+.news .hd a:hover h3, .news .on a h3 {
+    color: #0054a7;
+}
+
+.news .hd a i {
+    color: #999;
+    line-height: 20px;
+    font-style: normal;
+    font-size: 9px;
+    display: block;
+}
+
+.news .hd a p {
+    color: #666;
+    line-height: 26px;
+    padding: 10px 50px 0;
+    cursor: pointer;
+    font-size: 14px
+}
+.ap2 {
+    height: 330px;
+    overflow: hidden;
+    margin-top: 70px;
+    padding-top: 215px;
+    background: url(../images/xzh1.png) no-repeat center 0;
+}
+
+.ap2 a {
+    display: block;
+    padding-top: 340px;
+    width: 1000px;
+    margin: 0 auto;
+}
+/*---------------私家内景---------------*/
+    .hd04.h8 {
+        background: url(../images/i8.png) no-repeat center -2074px;
+    }
+
+    .nav4 {
+        font-size: 18px;
+        text-align: center;
+        margin: 0 0 50px
+    }
+
+    .nav4 li {
+        margin: 0 5px;
+        display: inline;
+    }
+
+    .nav4 li a {
+        padding: 0 15px;
+        display: inline-block;
+        line-height: 38px;
+        border: 1px solid #ccc;
+        border-radius: 6px
+    }
+    .nav4 li a:hover {
+        border: 1px solid #a40182;
+        color:#a40182;
+    }
+    .sc1 ul {
+        width: 1200px;
+    }
+    .sc1 li {
+        float: left;
+        margin: 0 12px 40px 0;
+        width: 286px;
+    }
+
+    .sc1 li a {
+        display: block;
+    }
+
+    .sc1 img, .sc1 .t1 {
+        width: 286px;
+        height: 404px;
+        display: block;
+        overflow: hidden;
+    }
+
+    .sc1 a .t1 {
+        color: #fff;
+          }
+
+    .sc1 .t1 {
+        position: relative;
+        left: 0;
+        background: #000;
+        text-align: center
+    }
+
+    .sc1 .t1 span {
+        position: absolute;
+        left: 0;
+        top: -259px;
+        width: 100%;
+        height: 259px;
+        cursor: pointer;
+        background: url(../images/chloe.png) no-repeat center 0
+    }
+
+    .sc1 .t1 h3 {
+        font-size: 16px;
+        margin: 165px 0 10px
+    }
+
+    .sc1 .t1 i {
+        font-style: normal;
+        line-height: 22px;
+        display: block
+    }
+
+    .sc1 .t1 p {
+        position: absolute;
+        bottom: -32px;
+        font-size: 9px;
+        width: 290px;
+        text-transform: uppercase;
+    }
+
+    .sc1 .t2 {
+        text-align: right;
+        margin-left: 64px
+    }
+
+    .sc1 .t2 h3 {
+        border-bottom: 1px solid #ddd;
+        font-size: 18px;
+        line-height: 34px;
+        height: 34px;
+        overflow: hidden
+    }
+
+    .sc1 h3, .sc1 h4 {
+        font-weight: normal
+    }
+
+    .sc1 .t2 span {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 16px;
+        line-height: 28px;
+        font-style: italic;
+        color: #aaa
+    }
+
+    .sc1 .t2 h4 {
+        font-size: 14px;
+        line-height: 20px;
+        color: #aaa;
+        display: block;
+        height: 20px
+    }
+
+    .sc1 a:hover .t2 span, .sc1 a:hover .t2 h4 {
+        color: #666;
+    }
+    .sc1 a:hover .t2 h3 {
+        color:#a869ae;
+    }
+    #sc1 li {
+        margin-right: 14px;
+        width: 384px
+    }
+
+    #sc1 .t1 span {
+        top: -317px;
+        height: 317px;
+        background: url(../images/chloe2.png) no-repeat center 0;
+    }
+
+    #sc1 .t1 h3 {
+        font-size: 24px;
+        margin: 200px 0 10px
+    }
+
+    #sc1 .t1 i {
+        font-size: 16px
+    }
+
+    #sc1 img, #sc1 .t1 {
+        width: 384px;
+        height: 556px
+    }
+/*------------热门景点 s ------------------*/
+    .hd04.h1 {
+        background: url(../images/i8.png) no-repeat center -231px;
+        height: 230px;
+        margin: 100px 0 40px;
+        text-align: center
+    }
+    .sc9 {
+        width: 100%;
+        margin:0 auto;
+    }
+    .sc9 .bd.hyh-bd1 {
+        height: 750px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .sc9 .bd li {
+        float: left;
+        width: 100%;
+        height: 100%;
+        background-position: center 0;
+        background-repeat: no-repeat;
+    }
+
+    .sc9 .bd a {
+        display: block;
+        height: 100%;
+        width: 1000px;
+        margin: 0 auto
+    }
+    .sc9 .hd {
+        position: relative;
+        height: 195px;
+        overflow: hidden;
+    }
+
+    .sc9 .hd i {
+        border-bottom: 1px solid #bfc5c8;
+        position: absolute;
+        bottom: 2px;
+        width: 100%;
+        display: block
+    }
+
+    .sc9 .hd span {
+        display: block;
+        background: #a40182;
+        width: 220px;
+        height: 5px;
+        position: absolute;
+        bottom: 0;
+        font-size: 0;
+        line-height: 0
+    }
+    .sc9 .hd ul {
+        width: 1200px;
+    }
+    .sc9 .hd li {
+        margin-right: 20px;
+        float: left;
+        text-align: center
+    }
+
+    .sc9 .hd h3 {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 58px
+    }
+
+    .sc9 .hd a:hover, .sc9 .hd .on a {
+        color: #a40182
+    }
+
+    .sc9 .hd img {
+        width: 220px;
+        height: 110px;
+        display: block
+    }
+/*------------私家外景 s ------------------*/
+    .hd04.h7 {
+        background: url(../images/i8.png) no-repeat center -461px;
+    }
+/*------------最新客片 s ------------------*/
+    .hd04.h3 {
+        background: url(../images/i8.png) no-repeat center -919px;
+    }
+/*------------拍摄推荐 s ------------------*/
+    .hd04.h4 {
+        background: url(../images/i8.png) no-repeat center -1150px;
+    }
+    .sc3 ul {
+        width: 1300px;
+    }
+    .sc3 li {
+        float: left;
+        margin-right: 28px;
+        display: inline;
+        position: relative;
+        text-align: center
+    }
+
+    .sc3 li a {
+        display: block
+    }
+
+    .sc3 img {
+        width: 274px;
+        height: 274px;
+        display: block
+    }
+
+    .sc3 span {
+        width: 274px;
+        height: 333px;
+        display: block;
+        background: url(../images/pr.png) no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0
+    }
+
+    .sc3 a:hover span {
+        background-position: -278px 0
+    }
+
+    .sc3 h3 {
+        font-size: 20px;
+        width: 274px;
+        overflow: hidden;
+        height: 30px;
+        margin: 78px 0 12px;
+        font-weight: normal;
+        color: #333
+    }
+
+    .sc3 i {
+        height: 40px;
+        font: 35px/40px Georgia, "Times New Roman", Times, serif;
+        font-style: italic;
+        background: url(../images/pr2.png) no-repeat;
+        padding-left: 96px;
+        color: #999;
+    }
+
+    .sc3 a:hover i, .sc3 a:hover h3 {
+        color: #a40182;
+    }
+/*--------------婚摄资讯--------------*/
+    .hd04.h5 {
+        background: url(../images/i8.png) no-repeat center -1381px;
+    }
+    .sc6 {
+        background: #00abeb;
+        height: 480px;
+        padding: 50px 0;
+        overflow: hidden
+    }
+
+    .sc6 .hd {
+        width: 360px;
+        margin: 0 auto
+    }
+
+    .sc6 .hd li {
+        float: left;
+        margin: 0 5px
+    }
+
+    .sc6 .hd a {
+        color: #fff;
+        display: block;
+        padding: 1px 17px;
+        font-size: 18px;
+        line-height: 36px;
+        text-align: center
+    }
+
+    .sc6 .hd a:hover, .sc6 .on a {
+        border: 1px solid #fff;
+        padding: 0 16px;
+        border-radius: 6px
+    }
+
+    .sc6 .bd {
+        clear: both;
+        padding-top: 50px
+    }
+    .sc6 .bd ul {
+        width: 1300px;
+    }
+    .sc6 .bd li {
+        float: left;
+        margin: 0 28px 70px 0;
+        display: inline;
+        position: relative;
+        text-align: center;
+        background: #fff;
+        position: relative;
+        width: 274px
+    }
+
+    .sc6 .bd li a {
+        display: block;
+        color: #999
+    }
+
+    .sc6 .bd li a:hover {
+        color: #000;
+        background: url(../images/new2.png) no-repeat right bottom
+    }
+
+    .sc6 img {
+        width: 274px;
+        height: 180px;
+        display: block
+    }
+
+    .sc6 .bd h3 {
+        font-size: 16px;
+        overflow: hidden;
+        height: 40px;
+        line-height: 40px;
+        font-weight: normal;
+        background: #378ce1;
+        color: #fff
+    }
+
+    .sc6 .bd a:hover h3 {
+        background: #0054a7
+    }
+
+    .sc6 .bd span {
+        display: block;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 16px;
+        margin-top: 20px;
+        font-style: italic;
+        color: #657681
+    }
+
+    .sc6 .bd p {
+        line-height: 26px;
+        padding: 15px 20px 30px;
+        height: 80px;
+        font-size: 14px;
+        cursor: pointer
+    }
+
+    .sc6 i, .sc6 b {
+        background: url(../images/new.png) no-repeat 0 bottom;
+        height: 10px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        cursor: pointer;
+        font-size: 0;
+        line-height: 0;
+    }
+
+    .sc6 i {
+        top: 0;
+    }
+
+    .sc6 b {
+        background-position: 0 0;
+        bottom: 0;
+    }
+    /*---------查看更多 美丽客片----------*/
+    .mo3 {
+        position: relative;
+        text-align: center;
+        margin-top: 40px;
+        height: 37px;
+    }
+
+    .mo3 span {
+        border-bottom: 1px solid #bfc5c8;
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .mo3 a {
+        display: inline-block;
+    }
+
+    .mo3 i, .mo3 b {
+        float: left;
+        padding: 0 20px;
+        display: inline-block;
+        cursor: pointer;
+        line-height: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .mo3 i {
+        background: #00abeb;
+        color: #eee;
+        font-family: Georgia, "Times New Roman", Times, serif
+    }
+
+    .mo3 b {
+        background: #a40182;
+        font-weight: normal;
+        color: #fff;
+    }
+
+    .mo3 a:hover i {
+        background: #378ce1
+    }
+
+    .mo3 a:hover b {
+        background: #d63cb6
+    }
+    /*----------微博秀--------------*/
+    .wb {
+        position: relative;
+        overflow: hidden;
+        margin-top: 100px;
+        height: 1121px
+    }
+
+    .wb .wb_b .l {
+        position: relative;
+    }
+    .wb p.bg {
+        background: #00abeb;
+        height: 760px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        display: block;
+        z-index: 0;
+    }
+
+    .wb .hd04 {
+        background-position: center -1840px;
+        margin: 49px auto 126px
+        position: relative;
+    }
+
+    .wb .hd04 a {
+        width: 574px;
+        padding-top: 146px;
+        height: 93px;
+    }
+
+    .wb .r {
+        width: 820px;
+        float: right;
+    }
+
+    .sc5 {
+        position: relative;
+        top: 20px;
+        height: 712px;
+        overflow: hidden;
+    }
+
+    .sc5 b {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        height: 670px;
+    }
+
+    .sc5 .hd {
+        position: absolute;
+        right: 0;
+        top: 15%;
+        z-index: 1;
+        width: 21px;
+        background: #00abeb;
+        padding: 10px 0;
+    }
+
+    .sc5 .hd li {
+        display: block;
+        cursor: pointer;
+        width: 21px;
+        height: 21px;
+        margin-bottom: 15px;
+        background: url(../images/ulink2.png) no-repeat;
+    }
+
+    .sc5 .bd {
+        position: absolute;
+    }
+    .sc5 .bd li {
+        position: relative;
+        margin: 0 0 42px 58px;
+        overflow: hidden;
+        line-height: 24px;
+        width: 700px
+    }
+    /*悬浮变暗*/
+    .sc5 .n, .sc5 .n s, .sc5 span {
+        width: 108px;
+        height: 108px;
+        display: block;
+        overflow: hidden;
+    }
+
+    .sc5 .n {
+        background: #000
+    }
+    /*悬浮小鱼图案*/
+    .sc5 .n s {
+        background: url(../images/face3.png) no-repeat center center;
+        position: absolute;
+        left: 0;
+        top: 108px
+    }
+
+    .sc5 img {
+        width: 100px;
+        height: 100px;
+        margin: 4px 8px 0 4px
+    }
+
+    .sc5 span {
+        background: url(../images/face.png) no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+        height: 140px;
+    }
+
+    .sc5 .txt {
+        float: left;
+        width: 518px;
+        padding: 23px 20px 0 50px;
+        height: 114px;
+        background: url(../images/face2.png) no-repeat;
+        font-size: 14px;
+        line-height: 30px;
+        cursor: pointer
+    }
+
+    .sc5 a {
+        color: #fff;
+        float: left;
+    }
+
+    .sc5 h3 {
+        color: #ff6;
+        font-weight: normal;
+        font-size: 18px
+    }
+
+    .sc5 a:hover p {
+        color: #00abeb
+    }
+
+    .wb .l {
+        background: url(../images/iphone.png) no-repeat;
+        height: 1042px;
+        float: left;
+        width: 354px
+    }
+
+    .wb .l iframe {
+        margin: 103px 0 0 25px
+    }
+
+    .wb .l span {
+        cursor: pointer;
+        margin: 140px auto 0;
+        width: 192px;
+        height: 273px;
+        display: block;
+        text-indent: -100px;
+        overflow: hidden
+    }
+
+
+
+
+
+
+
+/*------返回顶部  楼层跳跃-----*/
+.returnTop {
+    position: fixed;
+    z-index: 5;
+    bottom: 50px;
+    right: 20px;
+    display: none;
+}
+.returnTop ul {
+    height: 224px;
+    width: 100px;
+
+}
+.returnTop ul li {
+    padding: 20px;
+    background-color: #48a3cc;
+    color: black;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 10px;
+    font: 700 14px "楷体";
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            padding: 10px;
+            position: relative;
+        }
+        textarea {
+            font-size: 30px;
+            width: 365px;
+            resize: none;/*禁止文本框拖拽*/
+            outline-style: none;
+            border-radius: 10px;
+            border: 0;
+            opacity: 0.7;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        li {
+            line-height:40px;
+            font-size: 25px;
+            color: #ccc;
+            width: 365px;
+            color: #0d110f;
+            background-color: #fff;
+            margin-top: 2px;
+            border-radius: 5px;
+        }
+        a {
+            float: right;
+        }
+        button {
+            position: fixed;
+            top: 320px;
+            left: 405px;
+            border: 0;
+            width: 80px;
+            height: 40px;
+            outline: none;
+            font: 25px "楷体";
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        ul li a {
+            color: #ccc;
+            text-decoration: none;
+        }
+    </style>
+
+    <script>
+        window.onload = function () {
+            //需求1：点击按钮，添加li；
+            //需求2：点击a连接，删除li标签；
+
+            //需求1：点击按钮，添加li；
+                //思路：点击按钮的时候，或获取txt里面的value值；生成li添加到ul中；
+            var box = document.getElementById("box");
+            var txt = document.getElementById('txt');
+            var btn = document.getElementsByTagName('button')[0];
+
+            var ul =  document.getElementsByTagName('ul')[0]
+            console.log(ul);
+            //绑定事件
+            btn.onclick = function () {
+                //bug2：空字符和空格不允许添加(trim()去除字符串两边的空格)
+                if("" === txt.value.trim()){
+//                    alert("对不期，内容不能为空格！");
+                    txt.value = "";
+                    return;//不允许添加
+                }
+
+                //获取txt的value值，复制给新创建的li标签的innerHTML属性；
+                var newLi = document.createElement("li");
+                newLi.innerHTML = txt.value+"<a href='javascript:;'>Del</a>";
+//                ul.appendChild(newLi);
+                //bug3:后添加的反而在前面;(insertBefore插入到第一个子节点之前)
+                        //判断：如果有子节点那就放到第一个之前,如果没有用appendChild();
+//                if(ul.children.length != 0){
+//                    ul.insertBefore(newLi,ul.children[0]);
+//                }else{
+//                    ul.appendChild(newLi);
+//                }
+                //简单版
+                ul.insertBefore(newLi,ul.children[0]);
+
+                //bug1:添加完元素清空内容；
+                txt.value = "";
+
+                //因为点击完毕button按钮之后才会有a标签;所以绑定事件要写在function里面
+                //需求2：点击a连接，删除li标签；
+//                var aArr = document.getElementsByTagName("a");
+//                console.log(aArr);
+//                for(var i=0;i<aArr.length;i++){
+//                    aArr[i].onclick = function () {
+//                        //用ul删除a所在的li标签;
+//                        ul.removeChild(this.parentNode);
+//                    }
+//                }
+
+                //代码优化,每次生成一个li标签给他里面的a绑定事件;
+                var a = newLi.firstElementChild || newLi.firstChild;
+                a.onclick = function () {
+                    ul.removeChild(newLi);
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+
+    <div class="box" id="box">
+        <textarea name="" id="txt" cols="30" rows="10"></textarea>
+        <button>发布</button>
+        <ul>
+
+        </ul>
+    </div>
+
+</body>
+</html>

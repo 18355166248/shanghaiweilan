@@ -1,0 +1,525 @@
+/*页面信息 品牌初心 s */
+.pinpaichuxin {
+    height: 1152px;
+    margin-bottom: 50px;
+}
+.pinpaichuxin .pin-head {
+    height: 306px;
+    background:url("../images/i8.png")no-repeat center 105px;
+    margin-bottom: 50px;
+}
+.pinpaichuxin .pin-head span {
+    display: inline-block;
+    margin-top: 250px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 490px;
+    position: relative;
+    color:black;
+    background-color: #f5f5f5;
+    padding: 0 10px;
+}
+
+.pinpaichuxin .pin-head  i {
+    border-bottom: 1px solid #bfc5c8;
+    position: relative;
+    top: 265px;
+    display: block;
+}
+
+/* 图片栏 */
+.pinpaichuxin .w .pin-body {
+	height:795px;
+}
+.pinpaichuxin .w .pin-body .le-pic {
+	width:1180px;
+	height:501px;
+	float:left;
+    position: relative;
+}
+.pinpaichuxin .w .pin-body .le-pic .rr {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 297px;
+}
+.pinpaichuxin .w .pin-body .le-pic .bb a img {
+    width: 883px;
+}
+.pinpaichuxin .w .pin-body .le-pic ul li {
+	float:left;
+}
+
+/* 页面信息 品牌初心 e */
+
+
+/*-----页面信息  拍摄推荐  s-----*/
+.jiangxinzuopin {
+    height: 820px;
+}
+.jiangxinzuopin .pin-head {
+    height: 220px;
+    background:url("../images/i8.png")no-repeat center -1150px;
+    margin-bottom: 50px;
+}
+.jiangxinzuopin .pin-head span {
+    display: inline-block;
+    margin-top: 145px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 470px;
+    position: relative;
+    color:black;
+    background-color: #f5f5f5;
+    padding: 0 10px;
+}
+
+.jiangxinzuopin .pin-head  i {
+    border-bottom: 1px solid #bfc5c8;
+    position: relative;
+    top: 160px;
+    display: block;
+}
+.jiangxinzuopin .w ul li {
+    float: left;
+    margin-right: 9px;
+}
+.jiangxinzuopin .w ul li:nth-last-child(1) {
+    margin-right: 0;
+}
+.jiangxinzuopin .w ul li a {
+    position: relative;
+}
+.jiangxinzuopin .w ul li a i {
+    position: absolute;
+    display: none;
+    width: 288px;
+    height: 450px;
+    background: url("../images/xj.png") no-repeat;
+}
+
+.jiangxinzuopin .w ul li a div {
+    margin-top: 10px;
+}
+.jiangxinzuopin .w ul li a div span {
+    font-size: 16px;
+}
+.jiangxinzuopin .w .main {
+    display: none;
+}
+.jiangxinzuopin .w .main.selected {
+    display: block;
+}
+.jiangxinzuopin .w .login55 {
+    height: 50px;
+    width: 600px;
+    margin:10px auto;
+}
+.jiangxinzuopin .w .login55 li {
+    float: left;
+    margin:20px 35px;
+}
+.jiangxinzuopin .w .login55 li button {
+    padding: 9px 45px;
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 7px;
+    font: 20px "楷体";
+}
+.jiangxinzuopin .w .login55 li button.current {
+    background-color: #b08746;
+}
+    /*-----页面信息  拍摄推荐  e-----*/
+
+
+/*-----页面信息  私家外景  s-----*/
+.sijiawaijing {
+    height: 1270px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+.sijiawaijing .pin-head {
+    height: 220px;
+    background:url("../images/i8.png")no-repeat center -463px;
+    margin-bottom: 50px;
+}
+.sijiawaijing .pin-head span {
+    display: inline-block;
+    margin-top: 145px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 470px;
+    position: relative;
+    color:black;
+    background-color: #f5f5f5;
+    padding: 0 10px;
+}
+
+.sijiawaijing .pin-head  i {
+    border-bottom: 1px solid #bfc5c8;
+    position: relative;
+    top: 160px;
+    display: block;
+}
+.sijiawaijing .luomafengqing {
+    height: 900px;
+    background-color: #af8746;
+    position: relative;
+}
+
+.sijiawaijing .luomafengqing .box2 ul {
+    height: 900px;
+    position: relative;
+}
+.sijiawaijing .luomafengqing .box2 ul li {
+    float: left;
+    position: absolute;
+    top: 20px;
+    width: 204px;
+    height: 900px;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq1 {
+    position: absolute;
+    top: 288px;
+    left: 31px;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq2 {
+    position: absolute;
+    top: 402px;
+    left: 72px;
+    z-index: 2;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq3 {
+    position: absolute;
+    top: 350px;
+    left: 182px;
+    color: #fff;
+    font-size: 16px;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq4 {
+    position: absolute;
+    top: 444px;
+    left: 259px;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq5 {
+     position: absolute;
+     top: 568px;
+     left: 295px;
+     z-index: 2;
+ }
+.sijiawaijing .luomafengqing .box2 ul li .lmfq6 {
+    position: absolute;
+    top: 578px;
+    left: 340px;
+    color: #fff;
+    font-size: 16px;
+    z-index: 2;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq7 {
+    position: absolute;
+    top: 127px;
+    left: 464px;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq8 {
+    position: absolute;
+    top: 277px;
+    left: 524px;
+    z-index: 2;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq9 {
+    position: absolute;
+    top: 200px;
+    left: 655px;
+    color: #fff;
+    font-size: 16px;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq10 {
+    position: absolute;
+    top: 368px;
+    left: 604px;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq11 {
+    position: absolute;
+    top: 505px;
+    left: 645px;
+    z-index: 2;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq12 {
+    position: absolute;
+    top: 520px;
+    left: 700px;
+    color: #fff;
+    font-size: 16px;
+    z-index: 2;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq13 {
+    position: absolute;
+    top: 310px;
+    left: 900px;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq14 {
+    position: absolute;
+    top: 435px;
+    left: 935px;
+    z-index: 2;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq15 {
+    position: absolute;
+    top: 360px;
+    left: 1035px;
+    color: #fff;
+    font-size: 16px;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq16 {
+    position: absolute;
+    top: 467px;
+    left: 1094px;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq17 {
+    position: absolute;
+    top: 590px;
+    left: 1130px;
+    z-index: 2;
+}
+.sijiawaijing .luomafengqing .box2 ul li .lmfq18 {
+    position: absolute;
+    top: 610px;
+    left: 1190px;
+    color: #fff;
+    font-size: 16px;
+    z-index: 2;
+}
+
+.sijiawaijing .waijingpic {
+    height: 220px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+/*-----页面信息  私家外景  e-----*/
+
+
+/*-------优惠 倒计时  s---------*/
+.daojishi {
+    height: 100px;
+    background :url("../images/map.png") no-repeat center -520px;
+    font: 700 30px "宋体";
+    color: #fff;
+    line-height: 100px;
+    padding-left: 380px;
+}
+.daojishi .time {
+    font: 700 30px "宋体";
+}
+/*-------优惠 倒计时  e---------*/
+
+
+/*------页面信息 新人客片 s ----------*/
+.xinrenkepian {
+    height: 970px;
+    margin-top: 40px;
+}
+.xinrenkepian .pin-head {
+    height: 220px;
+    background:url("../images/i8.png")no-repeat center -922px;
+    margin-bottom: 50px;
+}
+.xinrenkepian .pin-head span {
+    display: inline-block;
+    margin-top: 145px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 469px;
+    position: relative;
+    color:black;
+    background-color: #f5f5f5;
+    padding: 0 10px;
+}
+
+.xinrenkepian .pin-head  i {
+    border-bottom: 1px solid #bfc5c8;
+    position: relative;
+    top: 160px;
+    display: block;
+}
+.xinrenkepian .w .kepiantupian .kepianul {
+    position: relative;
+}
+
+.xinrenkepian .w .kepiantupian .kepianul li {
+    float: left;
+    margin-right: 11px;
+    position: absolute;
+}
+.xinrenkepian .w .kepiantupian .kepianul li img {
+    border-radius: 20px;
+}
+
+.xinrenkepian .w .kepiantupian .arrow {
+    position: relative;
+    z-index: 4;
+    top: 200px;
+    opacity: 0;
+}
+.xinrenkepian .w .kepiantupian .arrow .prev,.xinrenkepian .w .kepiantupian .arrow .next{
+    width:80px;
+    height:112px;
+    position: absolute;
+    top:50%;
+    margin-top:-20px;
+    background: url(../images/prev.png) no-repeat;
+    z-index: 9;
+}
+.xinrenkepian .w .kepiantupian .arrow .next{
+    right:0;
+    background-image: url(../images/next.png);
+}
+.xinrenkepian .w .yinfu {
+    height: 31px;
+    width: 100%;
+    background: url("../images/bj4.jpg") ;
+    position: absolute;
+    bottom: -3850px;
+    left: 0;
+}
+
+/*------页面信息 新人客片 e ----------*/
+
+
+/*--------页面信息    新人祝福 s-----------*/
+.xinrnezhufu1 {
+    height: 570px;
+}
+.xinrnezhufu1 .pin-head {
+    height: 220px;
+    background:url("../images/i8.png")no-repeat center -234px;
+    margin-bottom: 50px;
+}
+.xinrnezhufu1 .pin-head span {
+    display: inline-block;
+    margin-top: 145px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 500px;
+    position: relative;
+    color:black;
+    background-color: #f5f5f5;
+    padding: 0 10px;
+}
+
+.xinrnezhufu1 .pin-head  i {
+    border-bottom: 1px solid #bfc5c8;
+    position: relative;
+    top: 160px;
+    display: block;
+}
+.xinrnezhufu1 .qingzhu {
+    height: 300px;
+    width: 1350px;
+    margin:50px auto;
+    overflow: hidden;
+}
+.xinrnezhufu1 .qingzhu ul {
+    width: 1351px;
+}
+.xinrnezhufu1 .qingzhu ul li {
+    width: 150px;
+    height: 300px;
+    float: left;
+    cursor: pointer;
+}
+
+/*--------页面信息    新人祝福 e-----------*/
+
+
+/*------返回顶部  楼层跳跃-----*/
+.returnTop {
+    position: fixed;
+    z-index: 5;
+    bottom: 50px;
+    right: 20px;
+    display: none;
+}
+.returnTop ul {
+    height: 224px;
+    width: 100px;
+
+}
+.returnTop ul li {
+    padding: 20px;
+    background-color: #48a3cc;
+    color: black;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 10px;
+    font: 700 14px "楷体";
+    color: #fff;
+}
+
+
+/*-------小广告 s ------*/
+.smallAd {
+    width: 0px;
+    height: 302px;
+    position: fixed;
+    z-index: 6;
+    bottom: 260px;
+    right: 0;
+}
+.smallAd .img1 {
+    width: 125px;
+    height: 302px;
+}
+.smallAd span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0px;
+    height: 18px;
+    background-image: url(../images/h.jpg);
+    cursor: pointer;
+}
+.smallAd .img2 {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    width: 0;
+    border-radius: 100px;
+}
+
+
+/*-------小广告 e ------*/
+
+
+/*------微博发布    s--------*/
+.xqfb {
+    position: fixed;
+    right: 180px;
+    bottom:-300px;
+    width: 630px;
+    height: 800px;
+    z-index: 8;
+    display: none;
+}
+#MEIQIA-IFRAME {
+    position: absolute;
+    width: 630px;
+}
+
+.boxjl11 {
+    position: fixed;
+    z-index: 8;
+    bottom: 0;
+    right: 150px;
+    width: 200px;
+    height: 50px;
+    background-color: #8a5fff;
+}
+.boxjl11 p {
+    font:20px/50px "simsun";
+    margin-left: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+/*------微博发布    e--------*/

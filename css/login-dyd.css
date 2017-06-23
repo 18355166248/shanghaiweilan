@@ -1,0 +1,184 @@
+/*登录页面头部start*/
+.head{
+    height: 50px;
+}
+
+.head .w a{
+    font-size: 24px;
+    color:#00abeb;
+    line-height: 50px;
+}
+
+.head .w .zh{
+    float: left;
+}
+.head .w .line{
+    width: 1px;
+    height: 26px;
+    background-color: black;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 12px;
+    vertical-align: top;
+}
+.head .w .login{
+    display: inline-block;
+    margin-left: 20px;
+}
+/*登录页面头部end*/
+/*登录信息输入部分start*/
+.middle{
+    height: 512px;
+    background: url("../images/02dyd.jpg") no-repeat;
+}
+.middle .w{
+    width: 990px;
+    height: 512px;
+}
+
+#ptdl,#erweima {
+    background-color: #e1f2fc;
+}
+.middle .w .xf{
+    width: 540px;
+    height: 512px;
+    float: left;
+}
+.middle .w .dl{
+    width: 448px;
+    height: 360px;
+    float:right;
+    margin-top: 76px;
+    background-color: #e1f2fc;
+}
+.middle .w .dl #erweima{
+    padding-top: 60px;
+    padding-bottom: 88px;
+    padding-left: 152px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+#erwm {
+    background-color: #e1f2fc;
+}
+.middle .w .dl .dler{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.middle .w .dl .dler span{
+    display: inline-block;
+    width: 224px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.white{
+    background-color: #e1f2fc;
+}
+.gray{
+    background-color: #babecd;
+}
+.middle .w .dl .message{
+    padding-left: 50px;
+}
+#email,#passworddyd {
+    border:0;
+    border-radius: 5px;
+}
+.middle .w .dl .message input{
+    border: 1px solid gray;
+    width: 290px;
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.middle .w .dl .message #wz{
+    margin-bottom: 10px;
+}
+.middle .w .dl .message #wz a{
+    color: #406eba;
+    color: #406eba;
+}
+.middle .w .dl .message #wz .second{
+    margin-right: 50px;
+}
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.showw{
+    display: block;
+    color: red;
+}
+.middle .w .dl .message .wygj {
+    font-size: 16px;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.middle .w .dl .message .wygj a{
+    color: #4aafe9;
+}
+.middle .w .dl .message button{
+    text-align: center;
+    width: 350px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    background-color: #79b1d5;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+}
+
+/*登录信息输入部分end*/
+/*底部区域start*/
+.foot{
+    margin-top: 50px;
+    text-align: center;
+}
+.foot .service a:hover{
+    color: yellow;
+}
+/*底部区域end*/
+
+
+/*m密码评级*/
+.mima{
+    width: 220px;
+    height: 20px;
+    background: url("../images/strong.jpg") no-repeat;
+}
+.str1 {
+    background-position: 0 -20px;
+}
+
+.str2 {
+    background-position: 0 -40px;
+}
+
+.str3 {
+    background-position: 0 -60px;
+}
+
+.str4 {
+    background-position: 0 -80px;
+}
+
+/*翻车*/
+
+.shangche {
+    position: fixed;
+    left: 100px;
+    bottom: 350px;
+}
+.shangche img {
+    border-radius: 15px;
+}

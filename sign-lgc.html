@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/head.css"/>
+    <link rel="stylesheet" href="css/foot.css"/>
+    <link rel="stylesheet" href="css/sign-lgc.css"/>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/conment-jQuery-jl.js"></script>
+
+    <script>
+
+        window.onload = function () {
+
+
+            var inpArr = document.getElementsByTagName("input");
+//            var password = document.getElementById("password");
+
+            //需求1: 在第1个input中输入内容,失去焦点后判断是否符合邮箱号标准;并把反馈写到后面的span中;
+            fn(inpArr[0],/^[\w\-\.]+\@[\w]+\.[\w]{2,4}$/);
+
+//            需求2: 在第2个input中输入内容,失去焦点后判断是否符合手机号标准;并把反馈写到后面的span中;
+            fn(inpArr[1],/^([a-z].*[0-9])|([A-Z].*[0-9])|([0-9].*[a-zA-Z])$/);
+            //需求3: 在第3个input中输入内容,失去焦点后判断是否符合邮箱号标准;并把反馈写到后面的span中;
+            fn(inpArr[2],/^([a-z].*[0-9])|([A-Z].*[0-9])|([0-9].*[a-zA-Z])$/);
+            //需求4: 在第4个input中输入内容,失去焦点后判断是否符合座机号标准;并把反馈写到后面的span中;
+            fn(inpArr[3],/^((13[0-9])|(15[^4,\D])|(18[0-9]))\d{8}$/);
+            //需求5: 在第5个input中输入内容,失去焦点后判断是否符合账号标准;并把反馈写到后面的span中;
+            fn(inpArr[4],/^[a-zA-Z0-9_-]{4,20}$/);
+
+            //封装一个方法;绑定事件并设置正则表达式;
+            function fn(ele,reg) {
+                ele.onblur = function () {
+                    //如果内容为空,不能校验;
+                    if(this.value.trim() === ""){
+//                        //符合标准: 设置span的正确内容和样式;
+//                        this.nextSibling.className = "";
+//                        this.nextSibling.innerHTML = "请输入!";
+                        return;
+                    }
+
+                    //判断是否符合正则表达式:
+                    if(reg.test(this.value)){
+                        //符合标准: 设置span的正确内容和样式;
+                        this.nextSibling.className = "right";
+                        this.nextSibling.innerHTML = "输入正确!";
+                    }else{
+                        //不符合标准: 设置span的错误内容和样式;
+                        this.nextSibling.className = "wrong";
+                        this.nextSibling.innerHTML = "对不起,格式错误!";
+                    }
+                }
+            }
+
+            var yanzhenlgc = document.getElementsByClassName("yanzhen")[0];
+            var str = 5;
+            var timer = null;
+
+            yanzhenlgc.onclick = function () {
+                clearInterval(timer);
+                this.disabled = true;
+                var that = this;
+                timer = setInterval(timeEnd,1000);
+                function timeEnd() {
+                    yanzhenlgc.value = "还剩"+str+"秒";
+                    str--;
+                    if (str <= 0) {
+                        that.disabled = false;
+                        yanzhenlgc.value = "重新发送短信";
+                        clearInterval(timer);
+                        str = 5;
+                    }
+                }
+            }
+
+
+        }
+    </script>
+
+
+</head>
+<body>
+
+<div class="topFirst">
+    <div class="top">
+        <ul>
+            <!--顶部 固定导航栏 s-->
+            <li class="n">场景：</li>
+            <li><a href="javascript:;">倾城国际</a></li>
+            <li><a href="javascript:;">TOP女神馆</a></li>
+            <li><a href="javascript:;">戛纳国际</a></li>
+            <li><a href="javascript:;">Dior花园</a></li>
+            <li><a href="javascript:;">凡尔赛花园</a></li>
+            <li><a href="javascript:;">五维创意园</a></li>
+            <li><a href="javascript:;">天空之城</a></li>
+            <li><a href="javascript:;">外滩</a></li>
+            <li><a class="sk">预约报名</a></li>
+            <li class="iph" data-fancybox-href="/theme/tel.jpg"><a href="javascript:;" title="点击查看">手机入口</a></li>
+            <li class="sk">咨询热线：<i>400-1123-408</i></li>
+            <li><a href="login-dyd.html">登录注册</a></li>
+        </ul>
+    </div>
+</div>
+<!--顶部 固定导航栏 e-->
+
+
+<!--顶部 首页菜单栏 s-->
+<div class="top-caidan">
+    <div class="head"><i></i>
+
+        <div class="logo">
+            <h1><a href="javascript:;" title="上海蔚蓝海岸婚纱摄影">上海蔚蓝海岸婚纱摄影</a></h1>
+        </div>
+        <div id="nav">
+            <ul>
+                <li class="on"><a href="index-jl.html"><b style="top: 0px;">网站首页</b><span style="top: 0px;">HOME</span></a></li>
+                <li class=""><a class="in" href="javascript:;"><b style="top: 0px;">室内场景</b><span style="top: 0px;">SHOWCASE</span></a>
+                    <ul class="xialacaidan" style="display: none;">
+                        <li><a href="javascript:;">倾城国际</a></li>
+                        <li><a href="javascript:;">TOP女神馆</a></li>
+                        <li><a href="javascript:;">戛纳国际</a></li>
+                        <li><a href="javascript:;">Dior花园</a></li>
+                        <li><a href="javascript:;">凡尔赛花园</a></li>
+                        <li class="t"></li>
+                    </ul>
+                </li>
+                <li class=""><a class="in" href="javascript:;"><b style="top: 0px;">室外场景</b><span style="top: 0px;">TRAVEL</span></a>
+                    <ul class="xialacaidan" style="display: none;">
+                        <li><a href="javascript:;">本土复古</a></li>
+                        <li><a href="javascript:;">雕刻时光</a></li>
+                        <li><a href="javascript:;">挪威森林</a></li>
+                        <li><a href="javascript:;">美兰湖</a></li>
+                        <li><a href="javascript:;">外滩</a></li>
+                        <li><a href="javascript:;">天空之城</a></li>
+                        <li><a href="javascript:;">五维创意园</a></li>
+                        <li class="t"></li>
+                    </ul>
+                </li>
+                <li class=""><a class="in" href="javascript:;"><b style="top: 0px;">最新客片</b><span style="top: 0px;">LOVESHOW</span></a>
+                    <ul class="xialacaidan" style="display: none;">
+                        <li><a href="javascript:;">最新客片</a></li>
+                        <li class="t"></li>
+                    </ul>
+                </li>
+                <li class="x"><a class="in" href="javascript:;"><b style="top: 0px;">优惠活动</b><span style="top: 0px;">NEWS</span></a>
+                    <ul class="xialacaidan" style="display: none;">
+                        <li><a href="javascript:;">最新活动</a></li>
+                        <li><a href="javascript:;">服务贴士</a></li>
+                        <li><a href="javascript:;">新人课堂</a></li>
+                        <li><a href="javascript:;">新闻资讯</a></li>
+                        <li class="t"></li>
+                    </ul>
+                </li>
+                <li class=""><a class="in" href="javascript:;"><b style="top: 0px;">服务报价</b><span style="top: 0px;">PRICE</span></a>
+                </li>
+                <li class=""><a class="in" href="javascript:;"><b style="top: 0px;">关于我们</b><span style="top: 0px;">ABOUT</span></a>
+                    <ul class="xialacaidan" style="display: none;">
+                        <li><a href="javascript:;">公司简介</a></li>
+                        <li><a href="javascript:;">服务说明</a></li>
+                        <li class="t"></li>
+                    </ul>
+                </li>
+                <li class=""><a class="in" href="javascript:;"><b style="top: 0px;">粉丝好评</b><span style="top: 0px;">REVIEW</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--顶部 首页菜单栏 e-->
+
+
+
+<!--</ul>-->
+<!--</div>-->
+
+<div class="zhuce_z">
+        <div class="w">
+            <div class="yemian">注册账号</div>
+
+            <div class="zhanghao">
+                <label for="inpt-account" class="u-label">帐号:</label>
+                <input type="text" name="email" placeholder="输入你的请邮箱"><span>请先输入账号</span>
+            </div>
+
+            <div class="zhanghao">
+                <label for="inpt-account" class="u-label">密码:</label>
+                <input type="password" name="pwd" placeholder="6-16/区分大小写"><span>密码须由6-16个字符组成，区分大小写</span>
+
+            </div>
+            <div class="zhanghao">
+                <label for="inpt-account" class="u-label">确认密码:</label>
+                <input type="password" name="pwd" placeholder="再次确认密码"><span>密码须由6-16个字符组成，区分大小写</span>
+            </div>
+            <div class="zhanghao">
+                <label for="inpt-account" class="u-label">手机号:</label>
+                <input type="text" name="pwd" placeholder="11位手机号"><span>请输入正确的手机号码!</span>
+            </div>
+
+            <div class="guoji">
+                <a href="javascript:;">切换到国际手机</a>
+            </div>
+
+            <div class="wangji">
+                <a href="#">忘记密码可以通过手机可以快速找回密码</a>
+            </div>
+
+            <div class="duanxin">
+                <label for="inpt-account" class="u-label"></label>
+                <input type="text" name="pwd" id="inpt-account" placeholder="输入验证码">
+                <input  type="button" value="获取验证码" class="yanzhen"/>
+            </div>
+
+            <div class="zhanghao">
+                <input type="button" name="pwd" class="inpt-account" value="注册">
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--底部    foot  start-->
+<div class="foot">
+    <div id="nav2"><i></i>
+        <ul>
+            <li><a href="javascript:;"><b style="top: 0px;">网站首页</b><span style="top: 0px;">HOME</span></a></li>
+            <li><a href="javascript:;"><b style="top: 0px;">室内景点</b><span style="top: 0px;">SHOWCASE</span></a></li>
+            <li><a href="javascript:;"><b style="top: 0px;">室外景点</b><span style="top: 0px;">TRAVEL</span></a></li>
+            <li><a href="javascript:;"><b style="top: 0px;">最新客片</b><span style="top: 0px;">LOVESHOW</span></a></li>
+            <li><a href="javascript:;"><b style="top: 0px;">优惠活动</b><span style="top: 0px;">NEWS</span></a></li>
+            <li><a href="javascript:;"><b style="top: 0px;">服务报价</b><span style="top: 0px;">PRICE</span></a></li>
+            <li><a href="javascript:;"><b style="top: 0px;">场景介绍</b><span style="top: 0px;">SCENE</span></a></li>
+            <li><a href="javascript:;"><b style="top: 0px;">关于我们</b><span style="top: 0px;">ABOUT</span></a></li>
+            <li><a href="javascript:;"><b style="top: 0px;">联系我们</b><span style="top: 0px;">CONTACT</span></a>
+            </li>
+            <li class=""><a href="javascript:;"><b style="top: 0px;">服务口碑</b><span style="top: 0px;">REVIEW</span></a></li>
+        </ul>
+    </div>
+    <div class="f3">
+        <div class="bd">
+            <ul>
+                <li><a href="javascript:;" rel="nofollow" onclick="javascript:;">官方微博：http://weibo.com/weilanhaiansheying</a>
+                </li>
+                <li class="n2"><a href="javascript:;" data-fancybox-href="/qq.html" data-fancybox-type="iframe"
+                                  class="sk">咨询热线：400-1123-408</a></li>
+                <li class="n3"><a href="javascript:;" onclick="javascript:;">客服一</a> <a
+                        href="javascript:;" onclick="javascript:;">客服二</a>
+                    <a href="javascript:;" onclick="javascript:;">客服三</a></li>
+                <li class="n4"><a href="javascript:;" data-fancybox-href="/qq.html" data-fancybox-type="iframe"
+                                  class="sk">微 信 号：shanghaiweilanhaian</a></li>
+            </ul>
+            <div class="l"><a href="javascript:;" title="点击查看 详细地址">联系我们</a></div>
+        </div>
+        <div class="bt"><a href="javascript:;" onclick="goTop();return false" title="回到顶部">top</a></div>
+    </div>
+    <div class="f4">2016-2017版权所有 (C) 上海蔚蓝海岸婚纱摄影有限公司 <a href="javascript:;" rel="nofollow" target="_blank">沪ICP备10041485号-14</a>
+        技术支持：
+        <a href="javascript:;/" target="_blank">建站服务</a> <i>Shanghai·Blue bay wedding photo studio</i>
+    </div>
+</div>
+<!--底部    foot  end-->
+
+</body>
+</html>

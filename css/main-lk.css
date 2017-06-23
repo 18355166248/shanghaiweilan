@@ -1,0 +1,332 @@
+/*大背景图start*/
+.big_bgc {
+    width: 1349px;
+    height: 970px;
+}
+
+.big_bgc img {
+    width: 1349px;
+    height: 970px;
+}
+/*大背景图end*/
+.Lfxd {
+    height: 60px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.Lfxd span {
+    position: absolute;
+    font-size: 24px;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    top: -30px;
+    left: 50%;
+    margin-left: -150px;
+    background-color: #f6f6f6;
+}
+/*返回顶部小火箭start*/
+.top_rocket {
+    display: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 10;
+}
+/*返回顶部小火箭end*/
+/*大图片轮播start*/
+.main .bigimg {
+    width: 1180px;
+    height: 787px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .bigimg .txt {
+    position: absolute;
+    font-size: 50px;
+    color: #eb4396;
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+}
+
+.main .bigimg .arr {
+    display: none;
+}
+
+.main .bigimg .arr .next {
+    width: 38px;
+    height: 57px;
+    position: absolute;
+    top: 50%;
+    margin-top: -28px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.main .bigimg .arr .prev {
+    width: 38px;
+    height: 57px;
+    position: absolute;
+    top: 50%;
+    margin-top: -28px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.main .bigimg ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7080px;
+}
+
+.main .bigimg ul li {
+    float: left;
+}
+
+.main .bigimg ol {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.main .bigimg ol li {
+    width: 30px;
+    font: 700 20px/30px "微软雅黑";
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cur {
+    background: yellow;
+}
+/*大图片轮播end*/
+/*最美新娘start*/
+.main>p {
+    background-color: #e1e1e1;
+    color: #70d3ff;
+    font:700 25px/50px "微软雅黑";
+    text-align: center;
+    line-height: 50px;
+}
+
+.main .bride {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+.main .bride .arro {
+    position: relative;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.main .bride .arro span {
+    width: 76px;
+    height: 112px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.main .bride .arro .bt_next {
+    bottom: 130px;
+    right: 0;
+    z-index: 10;
+}
+
+.main .bride .arro .bt_prev {
+    bottom: 130px;
+    left: 0;
+    z-index: 10;
+}
+
+.main .bride ul {
+    height: 500px;
+    position: relative;
+}
+
+.main .bride ul li {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.main .bride ul li img {
+    width: 100%;
+}
+/*最美新娘end*/
+/*楼层跳跃start*/
+.main .storey_jump ol {
+    position: fixed;
+    width: 60px;
+    height: 200px;
+    top: 50%;
+    margin-top: -100px;
+    left: 10px;
+    z-index: 5;
+}
+
+.main .storey_jump ol li {
+    font-size: 20px;
+    background-color: #6b36ff;
+    color: #fff;
+    border: 1px solid #ccc;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.main .storey_jump .L_head1 {
+    width: 1349px;
+    height: 372px;
+    margin: 0 auto;
+    margin-top: -150px;
+    margin-bottom: 30px;
+    background: url("../index.png") no-repeat 0 -7236px;
+}
+/*tab栏切换start*/
+.main .storey_jump ul .L_nav1 {
+    position: relative;
+    width: 1152px;
+    height: 1112px;
+    margin: 0 auto;
+}
+
+.main .storey_jump ul .L_nav1 .change_nav {
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    top: -40px;
+    left: 0;
+    margin-left: 1px;
+}
+
+.main .storey_jump ul .L_nav1 .change_nav span {
+    float: left;
+    width: 100px;
+    height: 40px;
+    border-left: 1px solid #ccc;
+    border-top: 4px solid #f6f6f6;
+    margin-left: -1px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.main .storey_jump ul .L_nav1 .change_nav .top_red_line {
+    border-top: 4px solid red;
+}
+
+.main .storey_jump ul .L_nav1>ul {
+    position: absolute;
+    width: 1152px;
+    height: 1112px;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.main .storey_jump ul .L_nav1 .disp {
+    display: block;
+}
+
+.main .storey_jump ul .L_nav1>ul>li {
+    float: left;
+    width: 384px;
+    height: 556px;
+    cursor: pointer;
+}
+/*tab栏切换end*/
+.main .storey_jump ul .L_head2 {
+    width: 1349px;
+    height: 320px;
+    margin: 0 auto;
+    background: url("../index.png") no-repeat 0 -5772px;
+}
+/*第一次抢到第二层，有点小激动虽然start*/
+.main .storey_jump ul .text_emerge {
+    width: 1200px;
+    height: 868px;
+    margin: 0 auto;
+}
+
+.main .storey_jump ul .text_emerge>ul {
+    width: 1200px;
+    height: 868px;
+}
+
+.main .storey_jump ul .text_emerge>ul>li {
+    width: 300px;
+    height: 434px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.main .storey_jump ul .text_emerge>ul>li>img {
+    width: 300px;
+    height: 434px;
+}
+
+.main .storey_jump ul .text_emerge ul li .L_info {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    font: 30px "宋体";
+    color: #0913FE;
+    bottom: -150px;
+    left: 0;
+    text-align: center;
+    line-height: 150px;
+    background-color: rgba(0,0,0,0.5);
+}
+/*第一次抢到第二层，有点小激动虽然end*/
+.main .storey_jump ul .L_head3 {
+    width: 1349px;
+    height: 346px;
+    margin: 0 auto;
+    background: url("../index.png") no-repeat 0 -2918px;
+    z-index: 2;
+}
+/*楼上是SB，一共就三层你激动个爪子，虽然我是第三层start*/
+.main .storey_jump ul .L_accordion {
+    width: 1150px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid #FA7CB6;
+    overflow: hidden;
+}
+
+.main .storey_jump ul .L_accordion ul {
+    width: 1340px;
+}
+
+.main .storey_jump ul .L_accordion ul li {
+    width: 200px;
+    height: 400px;
+    float: left;
+    cursor: pointer;
+}
+
+/*楼上是SB，一共就三层你激动个爪子，虽然我是第三层end*/
+/*楼层跳跃end*/
